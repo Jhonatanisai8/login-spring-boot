@@ -35,4 +35,8 @@ public class Rol {
         this.name = name;
     }
 
+    public Rol(@NotEmpty @Length(max = 30) String name) {
+        this.name = name;
+    }
+
 }
