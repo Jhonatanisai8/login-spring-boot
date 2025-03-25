@@ -28,7 +28,7 @@ public class RegistrerUserController {
         return "register";
     }
 
-    @PostMapping("path")
+    @PostMapping
     public String registerUserAccount(@ModelAttribute("user") UserRequest userRequest) {
         userService.saveUser(userRequest);
         return "redirect:/register?Exito";
